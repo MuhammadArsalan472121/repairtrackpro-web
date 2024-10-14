@@ -1,49 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RepairTrackPro</title>
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <h1>RepairTrackPro</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Customer Information</h2>
-            <form id="customerForm">
-                <label for="name">Customer Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="contact">Contact:</label>
-                <input type="text" id="contact" name="contact" required>
-                
-                <label for="customerId">Customer ID (4 digits):</label>
-                <input type="text" id="customerId" name="customerId" required>
-                
-                <button type="submit">Add Customer</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Product Submission</h2>
-            <form id="productForm">
-                <label for="productName">Product Name:</label>
-                <input type="text" id="productName" name="productName" required>
-                
-                <label for="submissionDate">Submission Date:</label>
-                <input type="date" id="submissionDate" name="submissionDate" required>
-                
-                <label for="returnDate">Expected Return Date:</label>
-                <input type="date" id="returnDate" name="returnDate" required>
-                
-                <button type="submit">Submit Product</button>
-            </form>
-        </section>
-    </main>
+    <div class="welcome-screen">
+        <img src="../assets/sicLogo.png" alt="Logo" class="logo">
+        <!-- <h1 class="shop-title">Shaheen Installment Corporation</h1> -->
+        <h3 class="tagline">Track Repairing Products</h3>
+        <div class="button-container">
+            <button href="./admin.html" class="button">Admin</button>
+            <button id="recordsButton" class="button">Records</button>
+        </div>
+    </div>
 
     <script src="../src/script.js"></script>
 </body>

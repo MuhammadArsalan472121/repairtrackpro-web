@@ -1,0 +1,79 @@
+body {
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #555; /* Light background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Blur effect */
+body::before {
+    content: '';
+    position: absolute; /* Position it behind everything else */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/siclogo.png'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    filter: blur(10px); /* Adjust blur level as needed */
+    z-index: -1; /* Send it behind other content */
+}
+
+/* Additional content styles */
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.welcome-screen {
+    text-align: center;
+    background-color:lightsteelblue; /* White background for the welcome screen */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 50%; /* Adjust logo size */
+    height: 50%;
+}
+
+.shop-title {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.tagline {
+    font-size: 30px;
+    color: firebrick; /* Grey color for tagline */
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
