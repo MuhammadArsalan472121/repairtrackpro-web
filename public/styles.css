@@ -1,11 +1,11 @@
 body {
     margin: 50px;
     font-family: Arial, sans-serif;
-    background-color: #555; /* Light background color */
-    display: flex;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
 }
 
 /* Blur effect */
@@ -20,7 +20,7 @@ body::before {
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
-    filter: blur(10px); /* Adjust blur level as needed */
+    filter: blur(80px); /* Adjust blur level as needed */
     z-index: -1; /* Send it behind other content */
 }
 
@@ -35,15 +35,16 @@ section {
 
 .welcome-screen {
     text-align: center;
-    background-color:lightsteelblue; /* White background for the welcome screen */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color:lightsteelblue; /* White background for the welcome screen */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .logo {
-    width: 50%; /* Adjust logo size */
-    height: 50%;
+    width: 25%; /* Adjust logo size */
+    height: 25%;
 }
 
 .shop-title {
@@ -53,7 +54,7 @@ section {
 
 .tagline {
     font-size: 30px;
-    color: firebrick; /* Grey color for tagline */
+    color: rgb(255, 0, 0); /* Grey color for tagline */
     margin-bottom: 20px;
 }
 

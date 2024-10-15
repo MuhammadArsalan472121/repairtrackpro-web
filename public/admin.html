@@ -18,34 +18,45 @@
             <h2>Customer and Product Information</h2>
             <form id="combinedForm">
                 <!-- Customer Information -->
-                <label for="name">Customer Name:</label>
-                <input type="text" id="name" name="name" required>
+                <div>
+                    <label for="name">Customer Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="contact">Contact:</label>
-                <input type="text" id="contact" name="contact" required>
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" name="contact" maxlength="11" pattern="\d{11}" required>
+                </div>
 
-                <label for="customerId">Customer Account No. (4 digits):</label>
-                <input type="text" id="customerId" name="customerId" required>
+                <div>
+                    <label for="customerId">Customer Account No. (4 digits):</label>
+                    <input type="text" id="customerId" name="customerId" maxlength="4" pattern="\d{4}" required>
+                </div>
 
                 <!-- Product Submission -->
-                <label for="productName">Product Name:</label>
-                <input type="text" id="productName" name="productName" required>
+                <div>
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
 
-                <label for="submissionDate">Submission Date:</label>
-                <input type="date" id="submissionDate" name="submissionDate" required>
+                <div>
+                    <label for="submissionDate">Submission Date:</label>
+                    <input type="date" id="submissionDate" name="submissionDate" required>
 
-                <label for="returnDate">Expected Return Date:</label>
-                <input type="date" id="returnDate" name="returnDate" required>
+                    <label for="returnDate">Expected Return Date:</label>
+                    <input type="date" id="returnDate" name="returnDate" required>
+                </div>
 
-                <label for="status">Status:</label>
-                <select id="status" name="status" required>
-                    <option value="Pending">Pending</option>
-                    <option value="InProgress">In Progress</option>
-                    <option value="Completed">Repaired</option>
-                    <option value="Returned">Returned to Customer</option>
-                </select>
+                <div>
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="Pending">Pending</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="Completed">Repaired</option>
+                        <option value="Returned">Returned to Customer</option>
+                    </select>
+                </div>
 
                 <!-- Center the button -->
+
                 <div class="button-container">
                     <button type="submit">Submit</button>
                 </div>
@@ -53,7 +64,7 @@
         </section>
     </main>
 
-    <script src="../src/script.js"></script>
+    <script src="./scriptAdmin.js"></script>
 </body>
 
 </html>

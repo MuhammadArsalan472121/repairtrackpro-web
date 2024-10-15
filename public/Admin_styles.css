@@ -2,13 +2,38 @@
 
 /* Body Styles */
 body {
-    background-color: black;
+    position: relative;
+    min-height: 100vh;
+    /* Ensure the body covers the full viewport */
+    margin: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Applying the blurred background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/siclogo.png');
+    background-size: cover;
+    /* Make sure the image covers the body */
+    background-position: center;
+    filter: blur(50px);
+    /* Adjust blur level */
+    z-index: -1;
+    /* Ensure the image stays behind the content */
 }
 
 /* Header Styles */
 header {
     text-align: center;
-    padding-left: 10%;
+    /* padding-left: 10%; */
 }
 
 h1 {
@@ -17,9 +42,12 @@ h1 {
 
 /* Main Styles */
 main {
-    padding-left: 10%;
+    
     border: 10px solid aqua;
     border-radius: 8px;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Section Styles */
@@ -31,10 +59,12 @@ section {
 /* Heading Styles */
 h2 {
     color: #FF7F50;
+    font-weight: bold;
 }
 
 /* Form Styles */
 form {
+    padding-left: 10%;
     text-align: left;
 }
 
@@ -56,6 +86,7 @@ select {
 
 .button-container {
     text-align: center;
+    margin-left: -10%;
     /* Center align the button */
     margin-top: 20px;
     /* Add some space above the button */
