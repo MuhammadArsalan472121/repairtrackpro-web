@@ -28,6 +28,9 @@ public/live-server.json
 firebaseConfig.js
 firebase-debug.log
 firebase-debug.*
+firebase.*
+firebase-app.*
+firebase-firestore.*    
 
 # OS generated files
 .DS_Store

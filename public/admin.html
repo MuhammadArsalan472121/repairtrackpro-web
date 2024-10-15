@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Track Product</title>
-    <link rel="stylesheet" href="./Admin_styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="./adminStyles.css"> <!-- Link to the CSS file -->
+    <!-- Firebase CDN Scripts-->
+    <script type="module"src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <script type="module" src="./firebase.js"></script>
+
 </head>
 
 <body>
@@ -21,30 +27,23 @@
                 <div>
                     <label for="name">Customer Name:</label>
                     <input type="text" id="name" name="name" required>
-
                     <label for="contact">Contact:</label>
                     <input type="text" id="contact" name="contact" maxlength="11" pattern="\d{11}" required>
                 </div>
-
                 <div>
                     <label for="customerId">Customer Account No. (4 digits):</label>
                     <input type="text" id="customerId" name="customerId" maxlength="4" pattern="\d{4}" required>
                 </div>
-
-                <!-- Product Submission -->
                 <div>
                     <label for="productName">Product Name:</label>
                     <input type="text" id="productName" name="productName" required>
                 </div>
-
                 <div>
                     <label for="submissionDate">Submission Date:</label>
                     <input type="date" id="submissionDate" name="submissionDate" required>
-
                     <label for="returnDate">Expected Return Date:</label>
                     <input type="date" id="returnDate" name="returnDate" required>
                 </div>
-
                 <div>
                     <label for="status">Status:</label>
                     <select id="status" name="status" required>
@@ -54,9 +53,7 @@
                         <option value="Returned">Returned to Customer</option>
                     </select>
                 </div>
-
                 <!-- Center the button -->
-
                 <div class="button-container">
                     <button type="submit">Submit</button>
                 </div>
@@ -64,7 +61,8 @@
         </section>
     </main>
 
-    <script src="./scriptAdmin.js"></script>
+    <!-- Load your admin script after Firebase initialization -->
+    <script type="module" src="./adminScript.js"></script>
 </body>
 
 </html>
