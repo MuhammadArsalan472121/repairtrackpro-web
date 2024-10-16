@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Track Product</title>
-    <link rel="stylesheet" href="./adminStyles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="./addRecordStyles.css"> <!-- Link to the CSS file -->
     <!-- Firebase CDN Scripts-->
-    <script type="module"src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <!-- <script type="module"src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script> -->
 
     <script type="module" src="./firebase.js"></script>
 
@@ -38,6 +38,10 @@
                     <label for="productName">Product Name:</label>
                     <input type="text" id="productName" name="productName" required>
                 </div>
+                <!-- <div>
+                    <label for="repairingShopDetails">Repairing Shop Details:</label>
+                    <input type="text" id="repairingShopDetails" name="repairingShopDetails" required>
+                </div> -->
                 <div>
                     <label for="submissionDate">Submission Date:</label>
                     <input type="date" id="submissionDate" name="submissionDate" required>
@@ -48,9 +52,9 @@
                     <label for="status">Status:</label>
                     <select id="status" name="status" required>
                         <option value="Pending">Pending</option>
-                        <option value="InProgress">In Progress</option>
-                        <option value="Completed">Repaired</option>
-                        <option value="Returned">Returned to Customer</option>
+                        <!-- <option value="InProgress">In Progress</option>
+                        <option value="Repaired">Repaired</option> -->
+                        <option value="Returned to Customer">Returned to Customer</option>
                     </select>
                 </div>
                 <!-- Center the button -->
@@ -62,7 +66,7 @@
     </main>
 
     <!-- Load your admin script after Firebase initialization -->
-    <script type="module" src="./adminScript.js"></script>
+    <script type="module" src="./addRecordScript.js"></script>
 </body>
 
 </html>

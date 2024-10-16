@@ -8,5 +8,5 @@ adminButton.addEventListener('click', function () {
 
 document.getElementById('recordsButton').addEventListener('click', function () {
     // Redirect to the Records page (update URL accordingly)
-    window.location.href = './records.html'; // Replace with your actual records page
+    window.location.href = './searchRecord.html'; // Replace with your actual records page
 });

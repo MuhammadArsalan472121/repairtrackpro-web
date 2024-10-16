@@ -1,0 +1,125 @@
+/* Body Styles */
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Applying the blurred background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/siclogo.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #FFD700;
+}
+
+/* Main Styles */
+main {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 10px solid aqua;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+}
+
+/* Heading Styles */
+h2 {
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    color: aqua;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Result Container Styles */
+#resultsContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #FF7F50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.result-item h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    color: #FFF;
+    margin: 5px 0;
+}
+
+/* Styling for when no records are found */
+#resultsContainer p {
+    color: #FF7F50;
+}

@@ -15,10 +15,10 @@
         <div class="form-container sign-in">
             <form id="loginForm">
                 <h1>Sign In</h1>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <a href="#">Forget Your Password?</a>
-                <button id="SignIn">Sign In</button>
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <input type="password" id="passwordInput" placeholder="Password" required>
+                <p>Don't Forget Your Password?</p>
+                <button type="submit" id="SignIn">Sign In</button>
             </form>
         </div>
         <div class="toggle-container">
@@ -31,7 +31,10 @@
         </div>
     </div>
 
-    <script src="./loginScript.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script type="module" src="./firebase.js"></script> <!-- Firebase configuration -->
+    <script type="module" src="./loginScript.js"></script>
 </body>
 
 </html>

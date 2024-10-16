@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Body Styles */
+body {
+    position: relative;
+    min-height: 100vh;
+    /* Ensure the body covers the full viewport */
+    margin: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Applying the blurred background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/siclogo.png');
+    background-size: cover;
+    /* Make sure the image covers the body */
+    background-position: center;
+    filter: blur(50px);
+    /* Adjust blur level */
+    z-index: -1;
+    /* Ensure the image stays behind the content */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    /* padding-left: 10%; */
+}
+
+h1 {
+    color: #FFD700;
+}
+
+/* Main Styles */
+main {
+    
+    border: 10px solid aqua;
+    border-radius: 8px;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h2 {
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    padding-left: 10%;
+    text-align: left;
+}
+
+label {
+    color: aqua;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    text-align: center;
+    
+    /* Center align the button */
+    margin-top: 20px;
+    padding-bottom: 20px;
+    
+    /* Add some space above the button */
+}
+.button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

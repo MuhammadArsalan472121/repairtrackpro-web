@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <link rel="stylesheet" href="./updateRecordStyles.css"> <!-- Link to the CSS file -->
+</head>
+
+<body>
+    <header>
+        <h1>Update Repair Record</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Search Record by Customer ID</h2>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Enter Customer ID" required>
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="resultsContainer"></div>
+        </section>
+
+        <section id="updateSection" style="display: none;">
+            <h2>Update Record</h2>
+            <form id="updateForm">
+                <input type="hidden" id="recordId">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" required>
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" maxlength="11" required>
+
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" required>
+
+                <label for="repairingShopDetails">Repairing Shop Details:</label>
+                <input type="text" id="repairingShopDetails" required>
+
+                <label for="submissionDate">Submission Date:</label>
+                <input type="date" id="submissionDate" required>
+
+                <label for="expectedReturnDate">Expected Return Date:</label>
+                <input type="date" id="expectedReturnDate" required>
+
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="Pending">Pending</option>
+                    <option value="InProgress">In Progress</option>
+                    <option value="Repaired">Repaired</option>
+                    <option value="Returned to Customer">Returned to Customer</option>
+                </select>
+
+                <div class="button-container">
+                    <button type="submit">Update Record</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="./updateRecordScript.js"></script>
+</body>
+
+</html>

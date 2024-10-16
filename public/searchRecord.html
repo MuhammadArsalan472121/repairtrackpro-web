@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Record</title>
+    <link rel="stylesheet" href="./searchRecordStyles.css"> <!-- Your CSS file -->
+</head>
+
+<body>
+    <header>
+        <h1>Search Repair Records</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Search Criteria</h2>
+            <form id="searchForm">
+                <label for="searchInput">Search by Customer Name or Customer ID:</label>
+                <input type="text" id="searchInput" name="searchInput" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="resultsContainer">
+            <!-- Results will be shown here -->
+        </section>
+    </main>
+
+    <script type="module" src="./searchRecordScript.js"></script> <!-- Your JS file -->
+</body>
+
+</html>
